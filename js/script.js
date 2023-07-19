@@ -20,7 +20,7 @@ function autoplay() {
     // Start autoplay
     document.getElementById('js-autoplay-button')
       .innerHTML = 'Stop Autoplay';
-    intervalId = setInterval(function () {
+    intervalId = setInterval(() => {
       const playerMove = pickComputerMove();
       outcome(playerMove);
     }, 1000);
