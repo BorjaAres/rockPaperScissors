@@ -106,23 +106,23 @@ function outcome(userMove) {
 
 // Event listeners for rock, paper, and scissors buttons
 const rockButton = document.getElementById('js-rock-button');
-rockButton.addEventListener('click', function () {
+rockButton.addEventListener('click', () => {
   outcome('rock');
 });
 
 const paperButton = document.getElementById('js-paper-button');
-paperButton.addEventListener('click', function () {
+paperButton.addEventListener('click', () => {
   outcome('paper');
 });
 
 const scissorsButton = document.getElementById('js-scissors-button');
-scissorsButton.addEventListener('click', function () {
+scissorsButton.addEventListener('click', () => {
   outcome('scissors');
 });
 
 // Event listener for the Reset button to reset the score
 const resetButton = document.getElementById('js-reset-button');
-resetButton.addEventListener('click', function () {
+resetButton.addEventListener('click', () => {
   score.wins = 0;
   score.losses = 0;
   score.ties = 0;
